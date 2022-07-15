@@ -27,10 +27,10 @@ def trim_task(read1: LatchFile, read2: Optional[LatchFile],
               quality_type: QualityType = QualityType.SANGER
               ) -> LatchDir:
 
-    out_dir = Path("/sickle_out")
+    out_dir = Path("sickle_out")
     _outdir_cmd = [
         "mkdir",
-        "/sickle_out"
+        "sickle_out"
     ]
     subprocess.run(_outdir_cmd)
 
